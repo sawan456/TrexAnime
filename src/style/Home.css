@@ -1,0 +1,12 @@
+/* .app {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+} */
+
+.app {
+    /* background-color: red; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

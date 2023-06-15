@@ -1,0 +1,40 @@
+.movie-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.movie-section .movie-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding-right: 6rem;
+    gap: 2rem;
+}
+
+.movie-section .movie-card figure img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.card-content button {
+    background-color: white;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 1.2rem;
+}
+
+.card-content .btn {
+    background-color: red;
+    color: white;
+    width: 7rem;
+    cursor: pointer;
+}

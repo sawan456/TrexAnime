@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headerContainer {
+    background-color: rgb(195, 180, 180);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    gap: 2rem;
+}
+
+.headerContainer input {
+    margin-top: 1.4rem;
+    height: 2rem;
+    width: 20rem;
+    /* position: fixed; */
+}
+
+.card-error {
+    color: rgb(200, 11, 11);
+    /* background-color: red; */
+    margin-top: 1.5rem;
+    margin-left: .4rem;
+}
+
+.wishList {
+    margin-top: 1.4rem;
+    /* background-color: red; */
+    /* padding-left: 2rem; */
+    color: rgb(239, 67, 67);
+    /* border: 1px solid red; */
+    padding-right: 2rem;
+}
