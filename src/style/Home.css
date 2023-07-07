@@ -6,7 +6,20 @@
 } */
 
 .app {
-    /* background-color: red; */
+    background-color: rgb(232, 238, 240);
+    background-image: url("https://wallpapers.com/images/hd/blue-anime-3c6imk1nx0ybypmn.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100% 100%;
+  
+  /* filter: blur(8px); */
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    
+  /* body{
+    width: 100vh;
+  } */
 }

@@ -5,10 +5,20 @@ import { NavLink } from 'react-router-dom';
 import '../style/SingleMovie.css'
 import { useGlobalContext } from '../context'
 
+// const API_URL = `https://www.omdbapi.com/?apikey=d536148b`;
 
 const SingleMovie = () => {
+
+    
+
     
     const {cartItems,setCartItems} = useGlobalContext();
+
+    // const handleAddToCart = (movie) => {
+    //     alert("Item Added Successfully !")
+    //     setCartItems([...cartItems, movie]);
+    //     localStorage.setItem('datas', JSON.stringify([...cartItems, movie]))
+    // };
 
     const {id} = useParams();
 
@@ -55,16 +65,25 @@ const SingleMovie = () => {
             </div>
         );
     }
+    // ------------------------------------
 
-    function abc(cartData) {
-        alert("Item Added Successfully !")
-        setCartItems([...cartItems, cartData])
-        localStorage.setItem('datas', JSON.stringify([...cartItems, cartData]))
-    }
+    // function abc(cartData) {
+    //     alert("Item Added Successfully !")
+    //     setCartItems([...cartItems, cartData])
+    //     localStorage.setItem('datas', JSON.stringify([...cartItems, cartData]))
+    // }
+
+// ------------------------------------------------
+    // const Globalstate = useContext(Cartcontext);
+    // const dispatch = Globalstate.dispatch;
+// ------------------------------------------------
 
   return (
   
       <section className="movie-section">
+        <div className="movie__intro">
+            <img className="movie__backdrop" src={movie.Poster} />
+        </div>
         <div className="movie-card">
             <figure>
                 <img src={movie.Poster} alt="" />
@@ -78,7 +97,11 @@ const SingleMovie = () => {
                 <NavLink to="/" className="back-btn" >
                  <button>Go Back</button>
                 </NavLink>
-                 <button className='btn' onClick={() => abc(getDevil)} >Watch Later</button>
+                {/* <button amount={1} onClick={() => checkoutHandler(amount)} >Testing</button>
+                <Btntt amount={1}  checkoutHandler={checkoutHandler} /> */}
+                 {/* <button className='btn' onClick={() => abc(getDevil)} >Watch Later</button> */}
+                 {/* <button className='btn' onClick={() => handleAddToCart(movie)}>Add to Cart</button> */}
+                 {/* <button className='btn' onClick={() => dispatch({ type: "ADD", payload: item })} >Watch Later</button> */}
             </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ const AppProvider = ({children})=>{
     const [isLoading,setIsLoading] = useState(true);
     const [movie,setMovie] = useState([]);
     const [isError,setIsError] = useState({show: "false", msg: ""});
-    const [query,setQuery] = useState("naruto");
+    const [query,setQuery] = useState("avengers");
 
 
     
@@ -20,7 +20,7 @@ const AppProvider = ({children})=>{
         try {
             const res = await fetch(url);
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
             if(data.Response === "True"){
                 setIsLoading(false);
                 setIsError({

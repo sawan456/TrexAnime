@@ -2,6 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context'
 import { NavLink } from 'react-router-dom';
 import '../style/Movies.css'
+import Banner from './Banner';
 
 const Movies = () => {
     
@@ -16,7 +17,8 @@ const Movies = () => {
     }
 
   return (
-    
+    <>
+        <Banner/>
       <div className=" mainContainer">
         {movie.map((curMovie)=>{
             const {imdbID, Title,Poster,Year} = curMovie;
@@ -33,6 +35,7 @@ const Movies = () => {
             </NavLink>;
         })}
       </div>
+      </>
   )
 }
 

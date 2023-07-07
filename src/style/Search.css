@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
 .headerContainer {
-    background-color: rgb(195, 180, 180);
+    /* background-color: rgb(195, 180, 180); */
+    background-color: black;
+    /* color:  */
     height: 5rem;
     width: 100%;
     display: flex;
@@ -12,6 +16,7 @@
     /* align-items: center; */
     position: absolute;
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 .headerContainer input {
@@ -35,4 +40,26 @@
     color: rgb(239, 67, 67);
     /* border: 1px solid red; */
     padding-right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .headerContainer input{
+        /* margin-top: 1.5rem; */
+        width: 6rem;
+    }
+    .card-error{
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerContainer .profileInfo  h2{
+        background-color: blue;
+        display: none;
+    }
+    
+    /* .profileInfo{
+        background-color: red;
+
+    } */
 }

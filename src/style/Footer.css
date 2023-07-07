@@ -3,7 +3,9 @@
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: gainsboro;
+    /* background: gainsboro; */
+    background-color: black;
+    color: white;
     /* overflow-x: hidden; */
 }
 
